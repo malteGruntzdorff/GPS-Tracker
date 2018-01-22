@@ -1,0 +1,25 @@
+<ActionBar class="action-bar" backgroundColor="#483D8B" color="#ffffff">
+    <Label class="action-bar-title" text="Login"></Label>
+</ActionBar>
+<GridLayout backgroundColor="#CCCCCC">
+    <ScrollView>
+        <StackLayout margin="10" verticalAlignment="top">
+            <Stacklayout class="form" padding="15" backgroundColor="#FFFFFF">    
+                <StackLayout class="page">
+                    <Label text="E-Mail"></Label>
+                    <TextField #email></TextField>
+                </StackLayout>
+                <StackLayout>
+                    <Label text="Password"></Label>
+                    <TextField  secure="true" #password></TextField>
+                </StackLayout>
+                <StackLayout>
+                    <Button class="btn btn-primary w-full" text="Login" (tap)="login()"></Button>
+                    <Label text="Not a member? Register here." (tap)="routeHere('register')" class="text-center footnote" ></Label>
+                </StackLayout>
+            </Stacklayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>
+
+

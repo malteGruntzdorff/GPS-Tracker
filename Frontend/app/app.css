@@ -1,0 +1,15 @@
+
+@import '~nativescript-theme-core/css/core.light.css';
+
+button{
+    background-color: #2d034e;
+    color: #ffffff;
+}
+
+button:highlighted { background-color: red; color: gray;}
+
+label:highlighted { background-color: red; color: gray;}
+
+label{
+    size: 16;
+}

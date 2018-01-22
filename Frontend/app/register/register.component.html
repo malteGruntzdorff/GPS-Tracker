@@ -1,0 +1,27 @@
+<ActionBar class="action-bar" backgroundColor="#483D8B" color="#ffffff">
+    <Label class="action-bar-title" text="Register"></Label>
+</ActionBar>
+<GridLayout backgroundColor="#CCCCCC">
+    <ScrollView>
+        <StackLayout margin="10" verticalAlignment="top">
+            <Stacklayout class="form" padding="15" backgroundColor="#FFFFFF">    
+                <StackLayout class="page">
+                    <Label text="Name"></Label>
+                    <Textfield #name></Textfield>
+                </StackLayout>
+                <StackLayout class="page">
+                    <Label text="E-Mail"></Label>
+                    <Textfield #email></Textfield>
+                </StackLayout>
+                <StackLayout class="page">
+                    <Label text="Password"></Label>
+                    <Textfield secure="true" #password></Textfield>
+                </StackLayout>
+                <StackLayout>
+                    <Button class="btn btn-primary w-full" text="Register" (tap)="register()"></Button>
+                    <Label margin-top="20" text="Already a Member? Click here to log in" (tap)="routeHere('home')" class="text-center footnote" ></Label>
+                </StackLayout>
+            </Stacklayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>
